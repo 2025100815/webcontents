@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="uft-8">
+<title>버튼을 만들자</title>
+</head>
+<body>
+<h3>버튼을 만들자</h3>
+<hr>
+<form>
+    <input type="submit" value="1">
+    <input type="submit" value="2">
+    <input type="submit" value="3"><br><br>
+    <input type="submit" value="4">
+    <input type="submit" value="5">
+    <input type="submit" value="6"><br><br>
+    <input type="submit" value="7">
+    <input type="submit" value="8">
+    <input type="submit" value="9"><br><br>
+</form>
+<hr>
+<h3>도형 서식 폼 만들기</h3>
+<hr>
+<form>
+    <fieldset>
+        <legend>도형서식 폼 만들기</legend>
+        선종류 <select name="linetype">
+            <option value="1" selected>실선</option>
+            <option value="2">점선</option>
+        </select><br>
+        선두께 : <input type="number" min="0.0" max="10.0" step="0.5"><br>
+        색 선택 : <input type="color" value="#008FFF" onchange="document.body.style.color=this.value">
+        투명도 (0 ~ 100) <input type="range" min="0" max="100" list="invisibility">
+        <datalist id="invisibility">
+            <option value="20" label="낮음">
+            <option value="50" label="중간">
+            <option value="80" label="높음">
+        </datalist>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
