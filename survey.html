@@ -8,18 +8,46 @@
 <h3>설문해주세요.</h3>
 <hr>
 <form>
+    학년: 
     <label>
-        학년 : 
-        <input type="radio" name="grade" value="1" checked>1학년
+        <input type="radio" name="grade" value="1">1학년
     </label>
     <label>
-        <input type="radio" name="grade" value="2" checked>2학년
+        <input type="radio" name="grade" value="2">2학년
     </label>
     <label>
-        <input type="radio" name="grade" value="3" checked>3학년
+        <input type="radio" name="grade" value="3">3학년
     </label>
     <label>
-        <input type="radio" name="grade" value="4" checked>4학년
+        <input type="radio" name="grade" value="4">4학년
     </label>
+    <br>
+    성별:
+    <label>
+        <input type="radio" name="gender" value="1">남성
+    </label>
+    <label>
+        <input type="radio" name="gender" value="2">여성
+    </label>
+    <br>
+    <label>
+        관심분야:
+        <input type="text" list="interest"><br>
+            <datalist id="interest">
+                <option value="하드웨어"></option>
+                <option value="인공지능"></option>
+                <option value="데이터베이스"></option>
+            </datalist>
+    </label>
+    <label>진로:</label>
+        <label><input type="checkbox" value="1">개발</label>
+        <label><input type="checkbox" value="2">기획</label>
+        <label><input type="checkbox" value="3">영업</label>
+        <label><input type="checkbox" value="4">창업</label>
+    </label>
+</form>
+<form>
+    <label>남기고싶은말:</label><br>
+    <textarea cols="50" rows="10">편하게 말해주세요</textarea>
 </form>
 </body>
