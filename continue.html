@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>continue문</title>
+    </head>
+
+    <body>
+        <h3>내가 원하는 대로 나머지도 정하고 나누는 수도 정하기</h3>
+        <hr>
+        <script>
+            let maxnum = prompt("몇까지",100);
+            maxnum = parseInt(maxnum);
+            let divine = prompt("몇으로 나눌까.",100);
+            divine = parseInt(divine);
+            let left = prompt("나머지 몇?",100);
+            left = parseInt(left);            
+            let sum = 0;
+            for(let i=1; i<=maxnum;i++){
+                if(i%divine !=left)
+                    continue;
+                document.write(i+" ");
+                sum +=i;
+            }
+            document.write("합은"+sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>break문</title>
+    </head>
+
+    <body>
+        <h3>1애서 얼마까지 더해</h3>
+        <hr>
+        <script>
+            let max = prompt("몇을 넘길 떄까지 더할까요?",1000);
+            max = parseInt(max);
+            let i=0,sum=0;
+            while(true){
+                sum +=i;
+                if(sum > max)
+                    break;
+                i++;
+            }
+            document.write(i+"까지 더하면" + max + "를 넘음. " + sum);
+        </script>
+    </body>
+</html>
